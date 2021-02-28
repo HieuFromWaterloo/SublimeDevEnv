@@ -11,7 +11,7 @@
 # Install Anaconda
 
 
-# Sublime Text Preferences
+# Sublime Text Preferences: paste this
 {
     "theme": "Material-Theme-Darker.sublime-theme",
     "color_scheme": "Packages/Predawn/predawn.tmTheme",
@@ -65,7 +65,7 @@
     "use_simple_full_screen": true
 }
 
-# Anaconda Sublime Setting
+# Anaconda Sublime Setting: paste this
 {
     "auto_formatting": true,
     "autoformat_ignore":
@@ -84,9 +84,26 @@
     "disable_anaconda_completion": true
 }
 
-# Build Sys:Python3
+# Build Sys:Python3 - mac
 {
     "cmd": ["/usr/bin/python3", "-u", "$file"],
     "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
     "quiet": true
 }
+
+# Build Sys:Python3 - windows
+{
+    "cmd": ["C:/Users/nghie/Anaconda3", "-u", "$file"],
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "quiet": true
+}
+
+# SET PATH anaconda on windows 10
+## step 1: go to anaconda prompt and
+where conda: path1
+where python: path2
+
+## remember those path
+
+## go back to windows terminal
+SETX PATH "%PATH%;path1;path2"
